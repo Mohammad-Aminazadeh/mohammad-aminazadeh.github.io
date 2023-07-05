@@ -10,7 +10,11 @@
 	<title>Home Page</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -33,10 +37,11 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#intro" class="active">About Me</a></li>
+				<li><a href="#about" class="active">About Me</a></li>
 				<li><a href="#first">Research Interests</a></li>
 				<li><a href="#second">Publications</a></li>
-				<li><a href="#cta">Projects</a></li>
+				<li><a href="#third">Projects</a></li>
+				<li><a href="#fourth">Relevant Coursework</a></li>
 			</ul>
 		</nav>
 
@@ -44,7 +49,7 @@
 		<div id="main">
 
 			<!-- About Me -->
-			<section id="intro" class="main">
+			<section id="about" class="main">
 				<div class="spotlight">
 					<div class="content">
 						<header class="major">
@@ -56,8 +61,8 @@
 							I studied Chemical Engineering for the first two years of my bachelor's. I switched my major
 							to Computer Science
 							and graduated as one of the top-ranking students among other students in that department
-							with a GPA of
-							3.84 (In my last 3 years studying Computer Science).
+							with a <b><em style="color: crimson;">GPA of
+							3.84</em></b> (In my <b><em style="color: crimson;">last 3 years</em></b> studying Computer Science).
 						</p>
 
 						<p>
@@ -75,14 +80,14 @@
 							Together with my supervisor, I co-authored two research papers that were published 
 							in the IEEE International Conference on Computer and Knowledge Engineering
 							 (<a href="https://iccke.um.ac.ir/">ICCKE</a>) and 
-							 the journal "Education and Information Technologies" and received 54 citations. <br><br>
+							 the journal "Education and Information Technologies" and received 54 citations. <br>
 							 
-							<a href="https://scholar.google.com/citations?hl=en&user=XjpvteEAAAAJ"
-								style="color: crimson;">Google Scholar</a>
+							<ul class="actions">
+								<li><a href="https://scholar.google.com/citations?hl=en&user=XjpvteEAAAAJ" type="button" class="btn btn-primary">Google Scholar</a></li>
+								<li><a href="#" type="button" class="btn btn-danger">CV</a></li>
+								<li><a href="#" type="button" class="btn btn-success">Transcript</a></li>
+							</ul>
 							<br>
-							<a href="" style="color: crimson;">CV</a>
-							<br>
-							<a href="" style="color: crimson;">Transcript</a>
 						</p>
 
 						<ul class="actions">
@@ -179,7 +184,7 @@
 			</section>
 
 			<!-- Get Started -->
-			<section id="cta" class="main special">
+			<section id="third" class="main special">
 				<header class="major">
 					<h2>Projects</h2>
 				</header>
@@ -229,6 +234,30 @@
 				</footer> -->
 			</section>
 
+
+			<section id="fourth" class="main special">
+				<header class="major">
+					<h2>Relevant Coursework</h2>
+				</header>
+
+				<ul>
+					<li style="text-align: left; font-size: x-large;"><b>Advanced Programming</b> (Grade: 20/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>Data Structure</b> (Grade: 19.80/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>Algorithms</b> (Grade: 17.51/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>Artificial Intelligence</b> (Grade: 16.02/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>Data Base Lab</b> (Grade: 20/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>MATLAB</b> (Grade: 20/20)</li>
+					<li style="text-align: left; font-size: x-large;"><b>Final Thesis/Project</b> (Grade: 19/20)</li>
+				</ul>
+
+				<!-- <footer class="major">
+					<ul class="actions special">
+						<li><a href="generic.html" class="button primary">Get Started</a></li>
+						<li><a href="generic.html" class="button">Learn More</a></li>
+					</ul>
+				</footer> -->
+			</section>
+
 		</div>
 
 		<!-- Footer -->
@@ -243,11 +272,12 @@
 			<section>
 				<h2>Contact Info</h2>
 				<dl class="alt">
-					<dt>Address</dt>
-					<dd>Department of Computer Science/Engineering &bull; University of Isfahan &bull; Daneshgah Street
-						&bull; Isfahan &bull; IRAN</dd>
+					<!-- <dt>Address</dt>
+					<dd>Department of Computer Science/Engineering &bull; University of Isfahan &bull; Daneshgah Street &bull; Isfahan &bull; IRAN</dd> -->
 					<dt>Email</dt>
 					<dd>mohammad.aminazadeh98@gmail.com</dd>
+					<dt>SkypeID</dt>
+					<dd>live:.cid.bf84593b74ef55a3</dd>
 					<dt>Phone</dt>
 					<dd>(+98) 910-3539035</dd>
 
